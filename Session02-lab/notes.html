@@ -1,40 +1,108 @@
+<!-- This is lab 2 done on Jan 9th on session 2 of course BCDV1006 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Majid Shockoohi</title>
     <link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body>
-    <h2>Lab 2: 2 HTML Practice</h2>
+    <h2>"Lab 2: 2 HTML Practice"</h2>
     <hr>
     <h3>"Client / server"</h3>
-    Client server is a type of architecture used it networks where there is a centeral server responding
+    <p>Client server is a type of architecture used it networks where there is a centeral server responding
     to requests made by clients for dynamic or static resources through URLs. Web servers in this architecture are
     responsible of generating the response for static resources where on dynamic pages this task is performed by
-    application servers usally.
+    application servers usally.</p>
+    <img src="csImg.png" alt="clientServerImage">
+    <small>Photo from cio-wiki.org</small>
     <hr>
+
     <h3>"HTML tags"</h3>
-    HTML tags are names user by HTMl to determine portions of the web page. It tells the brower how to display
+    <p>HTML tags are names user by HTMl to determine portions of the web page. It tells the brower how to display
     a page. We can have attributes in our html tags. Attributes gives more information .
     Attributes are always specified in the start tag. Attributes usually come in name/value pairs like: name="value".
     Last Version published is HTML5.
     <br>Examples on <a href="https://www.w3schools.com/html/html_attributes.asp">W3chools</a><br>
-    HTML is managed by W3 on official info can be found on <a href="https://www.w3.org/">here!</a><br>
+    HTML is managed by W3 on official info can be found on <a href="https://www.w3.org/">here!</a></p>
     <hr>
+
     <h3>"Git"</h3>
-    GIT is a version control system developed by Linus Trevold. It helps you keep track of a projects and also
+    <p>GIT is a version control system developed by Linus Trevold. It helps you keep track of a projects and also
     makes it possible for multiple developers to work on a same project. Git can be used on your local machine
     but it can also have a remote reository, either on the company's servers where you work or on public sites
     which offer same services such as GitHub and Git Lab.
-    More info and good tutorials can be found on <a href="https://git-scm.com/">GIT official web site</a>. <br><hr>
+    More info and good tutorials can be found on <a href="https://git-scm.com/">GIT official web site</a>.<br></p>
+    <hr>
+
     <h3>"CSS"</h3>
-    CSS is short for Casscading Style Sheets and is used to add style to an html file. CSS have three kind of
+    <p>CSS is short for Casscading Style Sheets and is used to add style to an html file. CSS have three kind of
     selectors where you can use tags by tagname in genereal Ex: H1, or you can define classes to use it in
     multiple HTML tags. Classes are defined by adding . in frong of your class name  Ex: .myClassName.
     and you can also define an id using # and access specific HTML tag with that id in your page. Ex: #myId.
     Intresting fact about CSS selectors is that they can be chained to make a combinition and have more
     flexible selectors and styles. <br>
     W3 is officially managing CSS and last realesed version is CSS3. More info is available at W3
-     <a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS homepage!</a><br><hr>
+    <a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS homepage!</a></p>
+    <hr>
+
+    <h2>“Lab 2: 2 HTML Knowledge”</h2>
+    <h3>What is an HTML tag? Give three examples of tags.</h3>
+    <p>An HTML tag is used to define what is the element we are using in the page. They can be used for items we
+    are displaying in the page or can hold information about meta data. Tags also can have attributes.
+    Example of a meta data tag is <q>link</q> which can point to a style sheet or a java script file. Other
+    tags can be mentioned are <q>h</q> a header tag which come in 6 sizes (H1,H2, ... ,H6) and <q>p</q> which
+    defines a  paragraph.<br></p>
+    <hr>
+    <h3>What is an empty tag? How does it differ from a regular tag?</h3>
+    <p>An empty HTML tag is one that doesn’t contain anything. Examples are <q>br</q> and <q>img</q> tags which
+        define a breack on line or a link to an image. Regular tags like <q>p</q> and <q>h</q> tags can hold text
+        within them.</p>
+    <hr>
+
+    <h3>What is an attribute of an HTML tag?</h3>
+    <p>An attribute defines more information about a tag. For example in &lt;img&gt; tag we have <q>src</q>
+    and <q>alt</q> attributes where in <q>src</q> we define a location of the image either</p>
+    <hr>
+
+    <h3>What is the correct way for HTML tags to nest?</h3>
+    <p>Every tag which is not an empty tag should be properly closed and we can add other tags in them
+    in order. At the end we should have a tree like structure where tags are nested inside.</p>
+    <hr>
+
+    <h3>How do you add an id to an HTML tag?</h3>
+    <p id="sampleId"><q>id</q> is an attribute for an html tag and is defined the same way every attribute is defined.
+    we use &lt;h1 id="myId"&gt;My Header&lt;/h1&gt; to define an id and we can use it later for CSS or JS.
+    This p tag for example has a sampleId define on it to be used in CSS for changing the color. </p>
+    <hr>
+
+    <h3>How do you add a class to an HTML tag?</h3>
+    <p>Same as <q>id</q>, <q>class</q> is an attribute and can be defined by
+    &lt;p id="myClass"&gt; My Paragraph &lt;/p&gt;</p> By this approch we can give multiple elements same class and
+    play with their style at the same time. It also save time reusing the style we defined.
+    <hr>
+
+    <h3>Why would you use an ID vs a class?</h3>
+    <p>Generally <q>id</q> is used when we seek a single element in the DOM where we use <q>class</q> attribute
+    to define some <q>p elements in red background while others in blue for example.</q></p>
+    <hr>
+
+    <h3>What is a type selector?</h3>
+    <p>The CSS type selector matches elements by node name. It selects all elements of the given type
+    within a document. Example is <q>a</q> element which can be selected by just defining <q>a</q> in
+    the CSS file. After that all anchor elements if not defined otherwise will follow the style defined in
+    the CSS file.</p>
+    <hr>
+
+    <h3>What is the head tag is for? What are some tags that go inside it?</h3>
+    <p>&lt;head&gt; tag is used for defining metadata or sometimes to point at external resources such as
+    javascript libraries we used in our document. It comes between &lt;html&gt; and &lt;body&gt;. Some
+    tags used in them are &lt;title&gt;, &lt;meta&gt; and &lt;script&gt;</p>
+    <hr>
+
+    <h3>Body is the body tag is for? What are some tags that go inside it?</h3>
+    <p>&lt;body&gt; tag represent the document body. Mainly most of the content of the page will be shown
+    in this tag. Some tags used in them are &lt;p&gt;, &lt;h1&gt; , &lt;a&gt;, &lt;img&gt; and &lt;table&gt;</p>
+    <hr>
+
 </body>
 </html>
