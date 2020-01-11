@@ -1,0 +1,48 @@
+#mainTitle {
+    color : #990033;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Arial;
+}
+
+#firstSection{
+    background-color: #999966;
+}
+
+#secondSection{
+    background-color: #996633;
+}
+
+#para1 {
+    font-size: 95%;
+}
+
+#para2 {
+    font-size: 90%;
+}
+
+#para3 {
+    font-size: 95%;
+}
+
+#para4 {
+    font-size: 95%;
+}
+
+#q1Div {
+  border: 1px solid purple;
+  box-sizing: border-box;
+  height: 250px;
+  margin: 5px 3px 2px 7px;
+  padding: 4px 3px 2px;
+  width: 400px;
+}
+
+#q2Div {
+  border: 1px solid purple;
+  box-sizing: content-box;
+  height: 250px;
+  margin: 5px 3px 2px 7px;
+  padding: 4px 3px 2px;
+}
