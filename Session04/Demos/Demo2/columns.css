@@ -1,5 +1,7 @@
 body{
     width: 60%;
     margin-left: 20%;
+    column-count: 2;
+    column-gap: 1em
 }
 
