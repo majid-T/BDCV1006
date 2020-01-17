@@ -3,6 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Week2.2 Lab: Forms</title>
+        <script type="text/javascript">
+            function convFunction() {
+                var cTemp = parseInt(document.getElementById("cel").value);
+                fTemp = (cTemp*1.8) + 32;
+                document.getElementById("fa").innerHTML = fTemp.toFixed(2);
+            }
+        </script>
     </head>
     <body>
         <form method="get" action="http://www.google.com/search">
@@ -43,5 +50,15 @@
             <br>
             <input type="text" name="telNo" pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$" placeholder="nnn-nnn-nnnn">
         </form>
+        <hr>
+        <fieldset>
+            <legend>
+                Celsius to Fahrenheit
+            </legend>
+                <input type="number" name="celsius" id="cel"> =
+                <output id="fa"></output>
+                <input type="button" name="convertBtn" onclick="convFunction()" value="Convert">
+        </fieldset>
+
     </body>
 </html>
