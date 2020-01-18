@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>3D Bonus Demo</title>
+    <link rel="stylesheet" type="text/css" href="3dStyle.css">
+</head>
+<body>
+    <div class="scene">
+        <div class="cube" id="myCube">
+            <div class="cube_face side1">Front</div>
+            <div class="cube_face side2">Back</div>
+            <div class="cube_face side3">Right</div>
+            <div class="cube_face side4">Left</div>
+            <div class="cube_face side5">Top</div>
+            <div class="cube_face side6">Buttom</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <div id="changePanel">
+        <input type="radio" name="rotate" value="front" checked>Front
+        <input type="radio" name="rotate" value="back">Back
+        <input type="radio" name="rotate" value="right">right
+        <input type="radio" name="rotate" value="left">left
+        <input type="radio" name="rotate" value="top">Top
+        <input type="radio" name="rotate" value="buttom">Buttom
+    </div>
+
+
+    <script type="text/javascript">
+        (function() {
+            var changePanel = document.getElementById("changePanel");
+            console.log(changePanel);
+
+            var cube = document.getElementById("myCube");
+            console.log(cube)
+
+            var currentClass = '';
+
+          function changeSide() {
+            var checkedRadio = changePanel.querySelector(':checked');
+            var showClass = 'show-' + checkedRadio.value;
+            if (currentClass) {
+              cube.classList.remove( currentClass );
+            }
+            cube.classList.add(showClass);
+            currentClass = showClass;
+          }
+          // set initial side
+          changeSide();
+
+          changePanel.addEventListener( 'change', changeSide );
+        })();
+    </script>
+</body>
+</html>
