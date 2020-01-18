@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Favorite fruit start</title>
+      <style>
+        input:invalid {
+          border: 2px dashed red;
+        }
+
+        input:valid {
+          border: 2px solid black;
+        }
+      </style>
+      <link rel="stylesheet" type="text/css" href="validation.css">
+  </head>
+
+  <body>
+      <form>
+        <label for="choose">Would you prefer a banana or a cherry?</label>
+        <input id="choose" name="i_like" pattern="[B|b]anana|[C|c]herry" required>
+        <button>Submit</button>
+        <hr>
+        <label for="myName">This is a minLenght and maxLength Demo:
+          <input type="text" name="myName" minlength="3" maxlength="20">
+        </label>
+        <hr>
+        <label>This is a min and max number input Demo
+        <input type="number" name="myNumber" min="7" max="36">
+        </label>
+      </form>
+  </body>
+</html>
